@@ -1,0 +1,94 @@
+\echo **Queries used to fill osm_umbria_admin table**
+\echo
+\r
+\pset t on
+SELECT CURRENT_TIME;
+\echo
+\echo initiatizing umbria_osm_admin table
+\i OSM_Umbria_admin_update.sql
+SELECT CURRENT_TIME;
+\echo
+\echo starting highway_type_umbria.sql
+\pset format u
+\pset fieldsep ,
+\pset t
+\o highway_type_Umbria.csv
+\i highway_type_umbria.sql
+\r \o
+\pset t on
+SELECT CURRENT_TIME;
+\echo
+\echo starting highway_type_pg.sql
+\pset format u
+\pset fieldsep ,
+\pset t
+\o highway_type_PG.csv
+\i highway_type_pg.sql
+\r \o
+\pset t on
+SELECT CURRENT_TIME;
+\echo
+\echo starting highway_type_tr.sql
+\pset format u
+\pset fieldsep ,
+\pset t
+\o highway_type_TR.csv
+\i highway_type_tr.sql
+\pset t on
+\r \o
+SELECT CURRENT_TIME;
+\echo
+\echo starting highway_lenght_by_amm.sql
+\i highway_lenght_by_amm.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting highway_tocheck_count.sql
+\i highway_tocheck_count.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting highway_name_percent.sql
+\i highway_name_percent.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting buildings.sql
+\i buildings.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting civici.sql
+\i civici.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting amenity.sql
+\i amenity.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting shop.sql
+\i shop.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting leisure.sql
+\i leisure.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting landuse.sql
+\i landuse.sql
+SELECT CURRENT_TIME;
+\r
+\echo
+\echo starting Umbria_export_dati.sql
+\pset format u
+\pset fieldsep ,
+\pset t
+\o Umbria_export.csv
+\i Umbria_export_dati.sql
+\r \o
+\pset t on
+SELECT CURRENT_TIME;
