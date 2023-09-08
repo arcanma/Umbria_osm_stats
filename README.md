@@ -1,4 +1,4 @@
-## Statistics on OpenStreetMap data for Umbria (Italy) region 
+## Statistics on OpenStreetMap data for Umbria region
 All files needed to produce the stats present on site https://wiki.openstreetmap.org/wiki/Umbria_Stato and related subpages, results are managed by LibreOffice Calc to add some statistical elaboration and produce output that can be easily incorporable into wiki pages.
 
 ## Author
@@ -71,5 +71,5 @@ If you changed the user name or db name un PostgreSQL you have to replace it in 
     -landuse.sql
      Query to compute number of landuses for each administrative area in Umbria
  
-   -Umbria_export_dati.sql
-    Query to export data computed on Umbria_export.csv file
+    -Umbria_export_dati.sql
+     Query to export data computed on Umbria_export.csv file
