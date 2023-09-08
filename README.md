@@ -15,8 +15,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Prerequisites
-Already installed PostgreSQL + PostGIS, added user "marcello" database named "gis"
-If you want to replace the user name or db name you have to replace it in auto_umbria_osm.sh script
+Already installed PostgreSQL + PostGIS, added user "marcello" database named "gis" 
+
+If you changed the user name or db name un PostgreSQL you have to replace it in auto_umbria_osm.sh script
 
 ## Files list and explanation
 
@@ -30,44 +31,45 @@ If you want to replace the user name or db name you have to replace it in auto_u
  List of queries passed to psql for execution
 
 /sql
+
     -OSM_Umbria_admin_update.sql
      Query for table statistics initialization
-
+  
     -highway_type_umbria.sql
      Query to compute the highway lenght in Umbria divided by highway type, result in highway_type_Umbria.csv file
-
+  
     -highway_type_pg.sql
      Query to compute the highway lenght in Perugia province divided by highway type, result in highway_type_PG.csv file
-
+  
     -highway_type_tr.sql
      Query to compute the highway lenght in Terni province divided by highway type, result in highway_type_TR.csv file
-
+  
     -highway_lenght_by_amm.sql
      Query to compute the highway lenght for each administrative area in Umbria
-
+  
     -highway_tocheck_count.sql
      Query to compute number of highways where the name should be set, based on highway classification, for each administrative area in Umbria
-
+  
     -highway_name_percent.sql
      Query to compute the percentage of highways where the name should be set but is not set for each administrative area in Umbria
-
+  
     -buildings.sql
      Query to compute number of buildings for each administrative area in Umbria
-
+  
     -civici.sql
      Query to compute number of addr:housenumber for each administrative area in Umbria
-
+  
     -amenity.sql
      Query to compute number of amenities for each administrative area in Umbria
-
+  
     -shop.sql
      Query to compute number of shops for each administrative area in Umbria
-
+  
     -leisure.sql
      Query to compute number of leisures for each administrative area in Umbria
-
+  
     -landuse.sql
      Query to compute number of landuses for each administrative area in Umbria
-
-    -Umbria_export_dati.sql
-     Query to export data computed on Umbria_export.csv file
+ 
+   -Umbria_export_dati.sql
+    Query to export data computed on Umbria_export.csv file
