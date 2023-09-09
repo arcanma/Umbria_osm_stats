@@ -5,7 +5,7 @@ All files needed to produce the stats present on site https://wiki.openstreetmap
 Marcello Arcangeli (arcanma@gmail.com)
 
 ## License
-All files are released into the public domain. <br>
+All files are released into the Creative Commons CC0 1.0 Universal. <br>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -24,7 +24,7 @@ If you changed the user name or db name un PostgreSQL you have to replace it in 
  This file
 
 -auto_umbria_osm.sh	 <br>
-﻿Main shell script, this script launch all operations, from data download to statistics export on .csv files, all log messages are saved in auto_umbria.log file for troubleshooting if needed.
+﻿Main shell script, this script launch all operations, from data download to statistics export on .csv files, all log messages are saved in auto_umbria.log file for troubleshooting if needed
 
 -query_list  <br>
  List of queries passed to psql for execution
