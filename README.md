@@ -5,7 +5,7 @@ All files needed to produce the stats present on site https://wiki.openstreetmap
 Marcello Arcangeli (arcanma@gmail.com)
 
 ## License
-All files are released into the public domain.
+All files are released into the public domain. <br>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -15,22 +15,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Prerequisites
-Already installed PostgreSQL + PostGIS, added user "marcello" database named "gis" 
-
+Already installed PostgreSQL + PostGIS, added user "marcello" database named "gis"  <br>
 If you changed the user name or db name un PostgreSQL you have to replace it in auto_umbria_osm.sh script
 
 ## Files list and explanation
 
--README.md
+-README.md <br>
  This file
 
--auto_umbria_osm.sh	
-﻿ Main shell script, this script launch all operations, from data download to statistics export on .csv files, all log messages are saved in auto_umbria.log file for troubleshooting if needed.
+-auto_umbria_osm.sh	 <br>
+﻿Main shell script, this script launch all operations, from data download to statistics export on .csv files, all log messages are saved in auto_umbria.log file for troubleshooting if needed.
 
--query_list
+-query_list  <br>
  List of queries passed to psql for execution
 
-/sql
+<b>/sql</b>
 
     -OSM_Umbria_admin_update.sql
      Query for table statistics initialization
