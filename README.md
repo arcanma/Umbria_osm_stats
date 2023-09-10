@@ -16,7 +16,7 @@ SOFTWARE.
 
 ## Prerequisites
 Already installed PostgreSQL + PostGIS, added user "marcello" database named "gis"  <br>
-If you changed the user name or db name un PostgreSQL you have to replace it in auto_umbria_osm.sh script
+If you changed the user name or db name in PostgreSQL you have to replace it in auto_umbria_osm.sh script
 
 ## Files list and explanation
 
